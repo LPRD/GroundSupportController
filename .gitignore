@@ -1,0 +1,5 @@
+**/build/*
+**/executable/*
+**/dist/*
+**log.txt
+**cal.txt
