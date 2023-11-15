@@ -217,9 +217,10 @@ int main()
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(PORT);
   
-    // Convert IPv4 and IPv6 addresses from text to binary
-    // form
-    if (inet_pton(AF_INET, "192.168.0.113", &serv_addr.sin_addr)    //127.0.0.1
+    // Convert IPv4 and IPv6 addresses from text to binary form
+    // TODO use getenv or main arguments to have a customizable target server address
+    // or add the server address to a editable config file that is read in on startup 
+    if (inet_pton(AF_INET, "192.168.0.193", &serv_addr.sin_addr)    //127.0.0.1     //192.168.0.113
         <= 0) {
         printf(
             "\nInvalid address/ Address not supported \n");

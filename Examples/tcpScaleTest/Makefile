@@ -22,6 +22,8 @@ build/i2cScaleNAU7802.o: ../../Source/i2cScaleNAU7802.cpp
 	$(CC) -c $(INC1) -o build/i2cScaleNAU7802.o ../../Source/i2cScaleNAU7802.cpp
 
 build/i2cMux.o: ../../Source/i2cMux.cpp
+	mkdir -p build
+	mkdir -p dist
 	$(CC) -c $(INC1) -o build/i2cMux.o  ../../Source/i2cMux.cpp
 
 
