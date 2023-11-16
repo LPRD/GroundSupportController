@@ -20,7 +20,7 @@ make all
 ```
 
 ## Run
-1. Start the server program
+1. Start the server program (see MissionControl Repo)
 
 2. Start the executable for this example using:
 ```bash
