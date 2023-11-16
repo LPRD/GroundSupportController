@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
 {
     if(argc < 3){
         std::cout << "Usage: " << argv[0] << " <server-ip> <server-port>" << std::endl;
-        std::cout << "<server-ip> should be in the format XXX.XXX.XXX.XXX" << std::endl;
+        std::cout << "<server-ip> should be in the format X.X.X.X" << std::endl;
         std::cout << "<server-port> should be in the format XXXXX" << std::endl;
         exit(1);
     }
@@ -244,7 +244,7 @@ int main(int argc, char* argv[])
     while(1)
     {
         int bytesToSend = NumCells*4;
-        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
         for(int i=0; i<NumCells; i++){
             if(loadCellAvailable[i]){
                 mux.setPort(i);

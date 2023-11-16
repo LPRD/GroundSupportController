@@ -29,6 +29,8 @@ make run
 make ARGS="<server-ip> <server-port>" run
 # or
 make run ARGS="<server-ip> <server-port>"
+# ex:
+make run ARGS="192.168.1.197 13056"
 # read Makefile to see available commands
 ```
 
